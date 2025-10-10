@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import profilePic from "./assets/Joel Jacob B.png";
-import graspearLogo from "./assets/graspearLogo.webp";
+import graspearLogo from "./assets/GraspearLogo.webp";
 import lokeyAILogo from "./assets/lokeyAI.jpeg";
 import systemtronLogo from "./assets/systemtron.png";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
