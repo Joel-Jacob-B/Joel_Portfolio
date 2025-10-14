@@ -346,6 +346,13 @@ font-size: 1.125rem;
 
 .project-image {
   display: block;
+  display: block;
+  max-width: 100%;
+  max-height: 120px; /* or any value that fits your card */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* avoids stretching, maintains aspect ratio */
+  margin: 0 auto;
   margin: 0 auto;
 }
 
