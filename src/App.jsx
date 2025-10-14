@@ -5,7 +5,14 @@ import profilePic from "./assets/Joel Jacob B.png";
 import graspearLogo from "./assets/GraspearLogo.webp";
 import lokeyAILogo from "./assets/lokeyAI.jpeg";
 import systemtronLogo from "./assets/systemtron.png";
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import co2 from "./assets/co2.png";
+import climatesnapshot from "./assets/climatesnapshot.png";
+import xipad from "./assets/xipad.png";
+import programmingLang from "./assets/programmingLang.png";
+import frontend from "./assets/frontend.png";
+import tools from "./assets/tools.png";
+import flutter from "./assets/flutter.png";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaLocationArrow, FaMapPin } from "react-icons/fa";
 
 import "./App.css";
 
@@ -141,8 +148,8 @@ export default function Portfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}>
-          <p></p>
-          I’m a Computer Science Engineering student at Agni College of Technology, passionate about blending creativity with technology. My primary focus lies in Flutter and MERN stack web development, delivering efficient, scalable, and visually appealing applications.
+          <p className="secondary-text">I’m a Computer Science Engineering student at Agni College of Technology, passionate about blending creativity with technology. My primary focus lies in Flutter and MERN stack web development, delivering efficient, scalable, and visually appealing applications.</p>
+          
         </motion.div>
       </Section>
 
@@ -154,12 +161,12 @@ export default function Portfolio() {
           transition={{ duration: 0.7, ease: 'easeOut' }}>
           <div className="education-item">
             <h3>B.E Computer Science and Engineering</h3>
-            <p>Agni College of Technology (2022 – Present)</p>
+            <p className="secondary-text">Agni College of Technology (2022 – Present)</p>
             <p className="secondary-text">CGPA: 9.08</p>
           </div>
           <div className="education-item">
             <h3>HSC in Computer Science with Maths</h3>
-            <p>M.C.C Higher Secondary School (2021 – 2022)</p>
+            <p className="secondary-text">M.C.C Higher Secondary School (2021 – 2022)</p>
             <p className="secondary-text">Percentage: 85.67%</p>
           </div>
         </motion.div>
@@ -170,24 +177,28 @@ export default function Portfolio() {
         <div className="skills-grid" >
           {[
             {
+              img: programmingLang,
               mainHeading: "Programming Languages",
               subHeading: "Java, Python, C",
               description:
                 "Currently learning Java, Python, and C with a focus on OOP and problem-solving concepts.",
             },
             {
+              img: frontend,
               mainHeading: "Web Technologies",
               subHeading: "HTML, CSS, JavaScript, React.js",
               description:
                 "Building skills in creating responsive web apps using HTML, CSS, JavaScript, and React.js.",
             },
             {
+              img: flutter,
               mainHeading: "App Development",
               subHeading: "Flutter",
               description:
                 "Working on cross-platform app development using Flutter with attention to UI and performance.",
             },
             {
+              img: tools,
               mainHeading: "Database and Tools",
               subHeading: "MySQL, Figma, Git, Express.js, Postman API",
               description:
@@ -203,6 +214,7 @@ export default function Portfolio() {
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="skill-item"
             >
+              <img src={skill.img} className="project-image" alt="Project Image" width={300} height={100}/>
               <h3 className="skill-Head">{skill.mainHeading}</h3>
               <p className="skill-Techs"><b>{skill.subHeading}</b></p>
               <p className="skill-desc">{skill.description}</p>
@@ -216,16 +228,19 @@ export default function Portfolio() {
         <div className="projects-grid" >
           {[
             {
+              img: co2,
               name: "Web Application to Quantify Carbon Footprint",
               desc: "Developed a web system to calculate carbon footprints and suggest emission reduction strategies.",
               tech: "HTML, CSS, JavaScript",
             },
             {
+              img: climatesnapshot,
               name: "ClimateSnapshot – A Week of Weather Insights",
               desc: "Built a weather app fetching past week’s temperature, humidity, and wind data.",
               tech: "HTML, CSS, JavaScript, Chart.js",
             },
             {
+              img: xipad,
               name: "Athletes Performance Visualizer",
               desc: "Flutter app visualizing athlete performance data using Syncfusion charts.",
               tech: "Flutter, Syncfusion Charts",
@@ -240,6 +255,7 @@ export default function Portfolio() {
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="project-item"
             >
+              <img src={p.img} className="project-image" alt="Project Image" width={200} height={200}/>
               <h3 className="project-name">{p.name}</h3>
               <p className="project-desc">{p.desc}</p>
               <p className="project-tech">Tech Used: {p.tech}</p>
@@ -255,7 +271,7 @@ export default function Portfolio() {
             {
               logo: graspearLogo,
               title: "Product Development Intern – Graspear Solutions Pvt Ltd",
-              date: "Apr 2025 – Present",
+              date: "Apr 2025 – Oct 2025",
               desc: "Frontend product development using Flutter with interactive UI components.",
               link: "https://www.linkedin.com/company/graspear"
             },
@@ -319,7 +335,7 @@ export default function Portfolio() {
             </button>
           </form>
           <div className="contact-info">
-            <p>Location: Chennai, India</p>
+            <p> <FaMapPin size={28} />Location: Chennai, India</p>
           </div>
         </div>
       </Section>
