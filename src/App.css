@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #000000, #241d8b, #367c8f);
+  background: linear-gradient(to right, #0f0f16, #241d8b, #367c8f);
   padding: 0 2rem;
   gap: 2.5rem;
   color: white;
