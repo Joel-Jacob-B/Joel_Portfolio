@@ -470,7 +470,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .footer {
   text-align: center;
   padding: 1.5rem 1rem;
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #0f0f16, #241d8b, #367c8f);
   color: white;
   user-select: none;
 }
