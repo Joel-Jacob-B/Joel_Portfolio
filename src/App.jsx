@@ -10,7 +10,7 @@ import climatesnapshot from "./assets/climatesnapshot.png";
 import xipad from "./assets/xipad.png";
 import programmingLang from "./assets/programmingLang.png";
 import frontend from "./assets/frontend.png";
-import tools from "./assets/tools.png";
+import tools from "./assets/tools1.png";
 import flutter from "./assets/flutter.png";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaLocationArrow, FaMapPin } from "react-icons/fa";
 
@@ -200,7 +200,7 @@ export default function Portfolio() {
             {
               img: tools,
               mainHeading: "Database and Tools",
-              subHeading: "MySQL, Figma, Git, Express.js, Postman API",
+              subHeading: "Figma, SpringBoot, PostmanAPI, Git, MySQL",
               description:
                 "Gaining practical experience in databases, version control, backend development, and API testing.",
             },
