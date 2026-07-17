@@ -71,7 +71,7 @@
   text-align: center;
 
   /* Gradient text */
-  background: linear-gradient(to right, #000000, #241d8b, #367c8f);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #000000, #241d8b, #367c8f);
   padding: 0 2rem;
   gap: 2.5rem;
   color: white;
